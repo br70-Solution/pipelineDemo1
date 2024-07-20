@@ -34,4 +34,11 @@ pipeline {
 
 }
        }
+post {
+           always {
+               // Actions à exécuter après le pipeline, quel que soit le résultat
+               cleanWs()
+           }
+       }
+       
 }
