@@ -8,7 +8,19 @@ pipeline {
                    bat 'php index.php'
                }
            }
+              stage('Deploy') {
+               steps {
+                   // Simuler le déploiement en copiant les fichiers vers un répertoire de déploiement
+                   script {
+                       def deployDir ="C:\\Users\\Fujitsu\\Desktop\\atelierJenkins1"
+                       bat "mkdir ${deployDir}"
+                       bat "copy index.php ${deployDir}\\"
+                       echo "Déploiement réussi dans ${deployDir}"
+                   }
+             
            
          }
 
+}
+       }
 }
