@@ -46,8 +46,13 @@ stage('Build') {
 
         post {
            always {
-               // Actions à exécuter après le pipeline, quel que soit le résultat
-               cleanWs()
-           }
+            echo 'Pipeline finished.'
+        }
+        success {
+            echo 'Pipeline succeeded.'
+        }
+        failure {
+            echo 'Pipeline failed.'
+        }
        }
 }
