@@ -1,1 +1,1 @@
-<?php echo 'FIRST JOB'; ?>
+<?php echo "Hello, Jenkins!"; ?>
