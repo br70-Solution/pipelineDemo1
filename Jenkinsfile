@@ -5,7 +5,7 @@ pipeline {
            stage('Checkout') {
                steps {
                    
-                   echo "Checkout"
+                   bat 'php index.php'
                }
            }
            
