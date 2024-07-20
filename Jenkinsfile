@@ -8,6 +8,17 @@ pipeline {
                    bat 'php index.php'
                }
            }
+              stage('Test') {
+               steps {
+                   // Exécuter le script de test PHP sur Windows
+                   bat 'php test.php'
+               }
+           }
+              
+              
+              
+              
+              
               stage('Deploy') {
                steps {
                    // Simuler le déploiement en copiant les fichiers vers un répertoire de déploiement
