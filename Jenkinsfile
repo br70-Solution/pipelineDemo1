@@ -19,11 +19,7 @@ pipeline {
                    // Exécuter le script de test PHP sur Windows
                    bat 'php test.php'
                }
-           }
-              
-              
-              
-              
+              }         
               
               stage('Deploy') {
                steps {
@@ -39,7 +35,7 @@ pipeline {
          }
 
 }
-       }
+       
 post {
            always {
                // Actions à exécuter après le pipeline, quel que soit le résultat
