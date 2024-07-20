@@ -19,14 +19,7 @@ stage('Build') {
            }
               stage('Test') {
                steps {
-                      composer global require phpunit/phpunit
-                      composer init
-                      composer require --dev phpunit/phpunit
-
-
-
-                     // Exécuter PHPUnit
-                      bat 'vendor\\bin\\phpunit'
+                    
                    // Exécuter le script de test PHP sur Windows
                    bat 'php test.php'
                }
