@@ -9,9 +9,9 @@ pipeline {
             }
               
           
-}
+         }
 
-stage('Build') {
+      stage('Build') {
                steps {
                    
                    bat 'php index.php'
